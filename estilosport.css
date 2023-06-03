@@ -1,0 +1,497 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Space+Grotesk:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #070707;
+    margin: 0;
+    font-family: 'Space Grotesk', sans-serif;
+    ;
+    color: aliceblue;
+
+}
+header{
+    background-color:transparent;
+   max-width: 1400px;
+    position: fixed;
+    width: 100%;
+    z-index: 150;
+}
+.container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    
+}
+.container .nicolas{
+    color: white;
+    padding: 1rem 2rem;
+    display: flex;
+    font-size: 3.5rem;
+    text-decoration: none;
+}
+.container nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+
+
+
+
+
+ .nicolas::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #070707;
+    animation: showRight 1s ease forwards;
+    animation-delay: .4s;
+
+}
+#menu-icon{
+    font-size: 3.6rem;
+    cursor: pointer;
+    display: none;
+}
+
+nav a {
+    color: white;
+   margin-left: 3.5rem;
+    font-size: 2.0rem;
+    text-decoration: none;
+    transition: .3s;
+
+}
+
+nav a.inicio-b {
+    background: linear-gradient(45deg, chartreuse, rgb(125, 35, 125));
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip:text
+}
+
+nav a:hover {
+    color: chartreuse;
+}
+
+/* parte del header */
+section{
+    min-height: 100vh;
+    padding: 10rem 9% 2rem; 
+}
+.inicio {
+    display: flex;
+    align-items: center;
+    padding: 0 9%;
+}
+
+.inicio-div {
+    
+    max-width: 60rem;
+    
+}
+
+.inicio-div h1 {
+    font-size: 5.6rem;
+    /* line-height: 1.2;
+    position: relative; */
+    font-weight: 700;
+}
+.inicio-div h1 span{
+    color: chartreuse;
+}
+.text-animate{
+    position: relative;
+    width: 32.8rem;
+}
+
+.inicio-div .text-animate h3{
+   font-size: 3.2rem; 
+   font-weight: 700;
+   color:transparent;
+   -webkit-text-stroke: .7px chartreuse;
+}
+
+.inicio-div h1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #070707;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+}
+
+.inicio-div h3 {
+    font-size: 32px;
+
+    color: chartreuse;
+
+}
+
+.inicio-div p {
+    font-size: 1.6rem;
+    margin:3rem 3rem 2rem 0 ;
+
+
+}
+
+.inicio-div .btn-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 34.5rem;
+    height: 5rem;
+ 
+}
+
+.btn-box .btn {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 15rem;
+    height: 100%;
+    background-color: chartreuse;
+    border: .5rem solid greenyellow;
+    border-radius: .8rem;
+    font-size: 2rem;
+    color: black;
+    text-decoration-line: none;
+    letter-spacing: .1rem;
+    z-index: 1;
+    overflow: hidden;
+    transition: .3s;
+}
+
+.btn-box .btn:hover {
+    color: chartreuse;
+}
+
+
+.btn-box .btn::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background-color: #070707;
+    z-index: -1;
+    transition: .5s;
+    /* overflow: hidden; */
+}
+
+.btn-box .btn:hover::before {
+    width: 100%;
+}
+
+.foto {
+    position: relative;
+    right: 5px;
+
+
+}
+.foto2{
+    display: none;
+}
+
+.foto img {
+    width: 300px;
+    height: 350px;
+    position: relative;
+    border: 5px solid chartreuse;
+    border-radius: 50%;
+}
+.div-icons{
+    max-width: 150px;
+    margin-top: 40px;
+
+}
+.icons {
+    
+    
+    width: 170px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icons a {
+    position: relative;
+    display: inline-flex;
+    width: 50px;
+    height: 50px;
+    border: .2rem solid chartreuse;
+    border-radius: 50%;
+    font-size: 20px;
+    color: chartreuse;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.icons a::before {
+    content: "";
+    position: absolute;
+    background: chartreuse;
+    left: 0;
+    top: 0;
+    width: 0;
+    height: 100%;
+    transition: .8s;
+    z-index: -1;
+    margin: 0;
+}
+
+.icons a:hover::before {
+    width: 100%;
+
+}
+
+.icons a:hover {
+    color: #070707;
+}
+
+.about{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+gap: 2rem;
+padding-bottom:6rem ;
+}
+.div-mario span img{
+
+    display: none;
+}
+.heading{
+    font-size: 5rem;
+    margin: bottom 3rem;
+    text-align: center;
+}
+.about-img{
+    position: relative;
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.about-img img{
+    width: 90%;
+    border-radius: 50%;
+    border: .4rem solid chartreuse;
+    
+}
+.about-img .circle-spin{
+   position: absolute;
+   top:50%; 
+   left: 50%;
+   transform: translate(-50%,-50%) rotate(0);
+   width: 100%;
+   height: 100%;
+   border-radius: 50%;
+   border-top:.4rem solid transparent ;
+   border-bottom:.4rem solid transparent  ;
+   border-left:.4rem solid chartreuse  ;
+   border-right:.4rem solid chartreuse ;
+}
+.about-content{
+    text-align: center;
+}
+.about-content h3{
+    font-size: 2.6rem;
+}
+.about-content p {
+    font-size: 1.8rem;
+    margin: 2rem 0 3rem ;
+}
+.btn-box .btns{
+    display: inline-block;
+    width: 15rem;
+}
+.btn-box .btns a::before{
+    background: chartreuse;
+}
+.contact{
+    min-height: auto;
+    padding: 7rem;
+}
+.contact h2{
+    justify-content: center;
+}
+.contact form {
+    max-width: 70rem;
+    margin: 0 auto;
+    align-items: center;
+}
+.contact form .input-box{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+.contact form .input-field{
+    position: relative;
+    width: 49%;
+    margin: .8rem 0;
+}
+.contact form .input-box .input-field input,
+.contact form .textarea-field textarea{
+    width: 100%;
+    height: 100%;
+    padding: 1.5rem;
+    font-size: 1.6rem;
+    color: chartreuse;
+    background: transparent;
+    border-radius: .6rem;
+    border: .4rem solid chartreuse;
+}
+.contact form .input-box .input-field input::placeholder,
+.contact form .textarea-field textarea::placeholder{
+    color: chartreuse;
+}
+.contact form .textarea-field{
+    position: relative;
+    margin: .8rem 0 2.7rem;
+    display: flex;
+
+}
+.contact form .textarea-field textarea{
+    resize: none;
+}
+.contact .btn-box .btn{
+    cursor: pointer;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    background-color: #070710;
+}
+.footer p {
+    font-size: 2rem;
+}
+ .foot-icon a  {
+position: relative;
+display: inline-flex;
+justify-content: center;  
+align-items: center;
+padding: .8rem;
+color: chartreuse;
+background-color: chartreuse;
+border: .3rem solid chartreuse;
+border-radius: .6rem;  
+    
+}
+.foot-icon a i {
+    font-size: 2.4rem;
+   color: #070707;
+   
+
+}
+.foot-icon a i:active{
+    color:#070707;
+}
+
+
+
+
+
+
+@keyframes showRight {
+    100% {
+        width: 0;
+    }
+}
+@media (max-width:850){
+    .div-icons{
+        flex-direction: column;
+    }
+}
+@media (max-width:800px) {
+    header{
+        background-color: #070707;
+        
+    }
+    .container {
+        flex-direction: column;
+        
+    }
+    nav a{
+        margin-left: 1.5rem;
+    }
+
+    
+    .inicio-div{
+        margin-top: 150px;
+        height: 80vh;
+    }
+    .mini-container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+        position: relative;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+    /* .inico h1{
+    
+    } */
+    .inicio{
+        flex-direction: column;
+        position: relative;
+        
+        
+    }
+    .text-animate {
+      margin: 0 auto;
+      
+    }
+    .foto{
+        display: none;
+        
+    }
+    .div-mario span img{
+        display: block;
+        width: 100%;
+        background: transparent;
+        border-radius: 50%;
+
+    }
+    
+    
+
+}
+@media(min-width:700px){
+    br{
+        display: none;
+    }
+
+}
