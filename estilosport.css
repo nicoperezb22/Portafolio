@@ -24,6 +24,7 @@ header{
     background-color:transparent;
    max-width: 1400px;
     position: fixed;
+    
     width: 100%;
     z-index: 150;
 }
@@ -84,6 +85,7 @@ nav a {
 nav a.inicio-b {
     background: linear-gradient(45deg, chartreuse, rgb(125, 35, 125));
     -webkit-text-fill-color: transparent;
+    background-clip: border-box;
     -webkit-background-clip:text
 }
 
@@ -439,8 +441,13 @@ border-radius: .6rem;
         background-color: #070707;
         
     }
+    .about{
+        margin-top: 210px;
+    }
     .container {
         flex-direction: column;
+        padding: 0;
+        padding-bottom: 15px;
         
     }
     nav a{
